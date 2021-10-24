@@ -1,0 +1,19 @@
+package com.maxtrain.tutorial;								//package is like name space in  C#
+
+import com.maxtrain.tutorial.models.Customer;         //like a using name in C#, but points to the class in Java
+//import com.maxtrain.tutorial.models.*;
+public class HellWorldJava {
+
+	public static void main(String[] args) {
+	
+		var customer = new Customer();						
+		customer.setName("Fred Inc.");
+		customer.setSales(0);
+		var message = String.format("Customer: %d | %s | %f ", 
+										customer.getId(),
+										customer.getName(),
+										customer.getSales());
+		System.out.println(message);							//*similar to console write line in C# (System.out.println)
+	}
+
+}
