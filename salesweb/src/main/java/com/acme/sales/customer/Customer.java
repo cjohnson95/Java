@@ -15,7 +15,7 @@ public class Customer {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int Id;
+	private int id;
 	
 	@Column(length=30, nullable=false)
 	private String code;
@@ -28,10 +28,10 @@ public class Customer {
 	public Customer() {}    					//Best practice to manually add a default constructor
 	
 	public int getId() {
-		return Id;
+		return id;
 	}
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getCode() {
 		return code;

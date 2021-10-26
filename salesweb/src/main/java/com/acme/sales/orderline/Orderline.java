@@ -72,4 +72,9 @@ public class Orderline {
 		this.order = order;
 	}
 
+	public void setTotal(int total) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
